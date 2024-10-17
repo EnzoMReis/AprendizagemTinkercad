@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>SDT</title>
+</head>
+<body>
+    <header>
+        <nav>
+          <div class="left">
+            <p>TinkerCad - Sinaleira Dupla no TinkerCad</p>
+          </div>
+          <div class="right">
+            <a class="first" href="../index.html">Home</a>
+  
+            <div class="dropdown">
+              <a href="" class="dropbtn">TinkerCad</a>
+              <div class="dropdown-content">
+                <a href="./sst.html">Semafóro Simples - TinkerCad</a>
+                <a href="./ssp.html">Semafóro Simples - Prática</a>
+                <a href="./sdt.html">Semafóro Duplo - TinkerCad</a>
+                <a href="./sdp.html">Semafóro Duplo - Prática</a>
+                <a href="./0a9.html">Contador de 0 à 9</a>
+                <a href="./9a0.html">Contador de 9 à 0</a>
+                <a href="./0a9SemaDuplo.html">Contador de 9 à 0 + Semafóro Duplo</a>
+              </div>
+  
+            </div>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <!-- <a href="c++.html">C++/CPP</a>
+            <a href="java.html">Java</a> -->
+          </div>
+        </nav>
+      </header>
+    <main>
+      <h2>Tela do circuito projeto</h2>
+      <br>
+      <img src="../img/tinkerDuploProj.png" alt="">
+      <br>
+      <h2>Diagrama de Blocos no TinkerCad</h2>
+      <br>
+      <img src="../img/blocosDuploProj.png" alt="">
+      <br>
+      <h2>Código do Projeto Acima em C++</h2>
+      <code>
+        <pre>
+void setup()
+{
+  pinMode(13, OUTPUT);
+  pinMode(8, OUTPUT);
+  pinMode(9, OUTPUT);
+  pinMode(11, OUTPUT);
+  pinMode(10, OUTPUT);
+  pinMode(12, OUTPUT);
+}
+
+void loop()
+{
+  digitalWrite(13, HIGH);
+  digitalWrite(8, HIGH);
+  delay(7000); 
+  digitalWrite(8, LOW);
+  digitalWrite(9, HIGH);
+  delay(2000);
+  digitalWrite(9, LOW);
+  digitalWrite(13, LOW);
+  digitalWrite(11, HIGH);
+  digitalWrite(10, HIGH);
+  delay(7000); 
+  digitalWrite(11, LOW);
+  digitalWrite(12, HIGH);
+  delay(2000); 
+  digitalWrite(12, LOW);
+  digitalWrite(10, LOW);
+  delay(1);
+}
+        </pre>
+      </code>
+    </main>
+</body>
+</html>
